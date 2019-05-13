@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Poiret+One|Quicksand:300');
+
+.clock{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2); */
+    /* margin-left: 2rem; */
+    /* margin-bottom: 1.5rem; */
+    min-width: 50rem;
+    /* width: 18rem; */
+    /* height: 10rem; */
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.dot{
+    color: rgba(0, 255, 100, 0.8);
+    font-size: 4rem;
+}
+
+.sec{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+}
+
+.time{
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    /* font-family: 'Nanum Gothic', sans-serif; */
+    font-family: "Quicksand", sans-serif;
+    /* font-family: "Poiret One", cursive; */
+    font-size: 7rem;
+    margin-left: 3%;
+}
+
+.date{
+    font-family: "Quicksand", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 3.5rem;
+    /* margin-left: 4%; */;
+}
