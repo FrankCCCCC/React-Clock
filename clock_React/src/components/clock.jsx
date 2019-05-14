@@ -36,7 +36,7 @@ export default class Clock extends React.Component{
                 hr: hr,
                 min: min,
                 sec: sec,
-                year: time.getFullYear(),
+                year: time.getFullYear().toString(),
                 month: months[time.getMonth()],
                 date: date,
                 day: days[time.getDay()]
