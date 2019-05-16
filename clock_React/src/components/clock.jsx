@@ -1,5 +1,4 @@
 import React from 'react';
-import {Row, Col}from 'reactstrap';
 import './clock.css';
 
 export default class Clock extends React.Component{
@@ -22,7 +21,7 @@ export default class Clock extends React.Component{
 
     componentDidMount(){
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+        var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         
         this.interval = setInterval(()=>{
             //console.log("HI");
@@ -57,27 +56,6 @@ export default class Clock extends React.Component{
                     {this.state.hr} {this.state.min} <span class='date'> {this.state.day} . {this.state.month} {this.state.date} {this.state.year} <span class='dot'>{this.state.sec%2? ".":""}</span></span> 
                 </div>
             </div>
-            // <div class='clock'>
-            //     <div class = 'row'>
-            //      <div class="col-md-auto">
-            //          <div>
-            //              <span class='time'>{this.state.hr}:{this.state.min}</span>
-            //          </div>
-            //      </div>
-            //      <div class='col-md-auto'>
-                    
-            //         <div class="container align-items-end">
-            //             <div class='col'>
-            //                 <span class='sec'>{this.state.sec}</span>
-            //                 <span class='date'> {this.state.day} . {this.state.month} {this.state.date} {this.state.year}</span>
-            //             </div>
-            //         </div>
-                            
-                        
-                        
-            //      </div>
-            //     </div>
-            // </div>
         );
 
     };
